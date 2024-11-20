@@ -29,7 +29,7 @@ def jellyfish_search(objective_function, dimensions, lower_boundary, upper_bound
                 else:
                     #Active jellyfish motion:
                     random_number = np.random.randint(population_size)
-                    direction = jellyfish[random_number] - jellyfish[current] if fitness[random_number] >= fitness[current] else jellyfish[current] - jellyfish[random_number]
+                    direction = jellyfish[random_number] - jellyfish[current] if fitness[current] >= fitness[random_number] else jellyfish[current] - jellyfish[random_number]
                     step = np.random.rand() * direction
                     jellyfish[current] += step
 
