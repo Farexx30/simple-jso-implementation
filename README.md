@@ -1,2 +1,2 @@
 # simple-jso-implementation
-Simple jellyfish search optimizer implementation in python with numpy
+Simple jellyfish search optimizer implementation in python using numpy, with benchmarks included.

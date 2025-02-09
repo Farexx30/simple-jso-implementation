@@ -287,7 +287,7 @@ def jellyfish_search(objective_function, dimensions, lower_boundary, upper_bound
     fitness = np.array([objective_function(position) for position in jellyfish])
 
     # Calculate start values:
-    best_jellyfish = jellyfish[np.argmin(fitness)]
+    best_jellyfish = jellyfish[np.argmin(fitness)].copy()
     best_fitness = np.min(fitness)
 
     beta = 3.0
